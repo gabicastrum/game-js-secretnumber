@@ -1,6 +1,5 @@
 alert('Boas vindas ao jogo do número secreto!');
-let numeroSecreto = 5; // variável que guarda o número secreto
-console.log(numeroSecreto); // exibe o número secreto no console, apenas para testar
+let numeroSecreto = parseInt(Math.random() * 100 + 1); // variável que guarda o número secreto
 let chute;
 let tentativas = 1;
 
@@ -8,7 +7,7 @@ let tentativas = 1;
 //enquanto o chute for diferente do número secreto, o jogo continua
 // != não é igual
 while (chute != numeroSecreto) {
-    chute = prompt('Escolha um número entre 1 e 30:');
+    chute = prompt('Escolha um número entre 1 e 100:');
     // condição = if
     if (chute == numeroSecreto) {
         break;
