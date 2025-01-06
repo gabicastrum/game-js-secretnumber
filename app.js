@@ -1,9 +1,12 @@
-alert('Boas vindas ao jogo do número secreto!'); 
-let numeroSecreto = 29; // variável que guarda o número secreto
+alert('Boas vindas ao jogo do número secreto!');
+let numeroSecreto = 5; // variável que guarda o número secreto
+console.log(numeroSecreto); // exibe o número secreto no console'
 let chute = prompt('Escolha um número entre 1 e 30:'); // pede ao usuário para escolher um número
 // colocar let antes do prompt para armazenar o valor digitado pelo usuário
 
 // condição = if
-if (numeroSecreto === 29) {
-    console.log ('Isso ai! Você descobriu o número secreto (29)');
+if (chute == numeroSecreto) {
+    alert('Isso ai! Você descobriu o número secreto (5)');
+} else {
+    alert('Que pena :( O número secreto não é ' + chute);
 }
